@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografi Editorial - Starter Template</title>
+    <style>
+        /* CSS Reset dan Font Dasar */
+        body {
+            font-family: Georgia, serif; /* Font Serif untuk kesan editorial */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8f7f5; /* Krem Sangat Muda */
+        }
+        
+        /* HEADER - Bagian Atas Gambar Besar */
+        .header-section {
+            height: 80vh; /* Tinggi 80% dari viewport */
+            background-image: url('pppp.jpg'); /* GANTI DENGAN NAMA FILE FOTO ANDA */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            color: white; /* Teks putih di atas foto */
+            padding-bottom: 50px;
+        }
+
+        .header-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-cta {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-cta:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* POTRET / FOTO PROFIL - Bagian 3 Kolom */
+        .potret-section {
+            background-color: #BCA68E; /* Warna Cokelat Muda (Olive/Khaki) */
+            padding: 80px 5%;
+            color: #1a1a1a;
+        }
+
+        .potret-section h2 {
+            font-family: sans-serif; /* Pindah ke sans-serif untuk kontras */
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .potret-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tata Letak Responsif 3 Kolom */
+            gap: 20px;
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover; /* Pastikan foto mengisi wadah */
+            min-height: 350px;
+        }
+
+        .foto-item p {
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Responsif Sederhana */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 2em;
+            }
+            .potret-grid {
+                grid-template-columns: 1fr; /* Jadi 1 kolom di layar kecil */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>Srt 55 Kota Waringin Timur</h1>
+        <p>Potret Kehidupan dalam Seni Rupa</p>
+
+    </div>
+
+    <div style="background-color: #f8f7f5; padding: 60px 5%; text-align: center;">
+        <h2 style="font-size: 3em; font-weight: bold; color: #b18c64;">TENTANG FMM</h2>
+        <p>Siswa srt angkatan pertama</p>
+        </div>
+
+    <div class="potret-section">
+        <h2>foto foto kami</h2>
+        
+        <div class="potret-grid">
+            
+            <div class="foto-item">
+                <img src="mmmm.jpg" alt="Potret Wanita Rambut Keriting">
+                <p>hbd abay</p>
+            </div>
+             
+            <div class="foto-item">
+                <img src="kkkk.jpg" alt="Potret Pria di Luar Ruangan">
+                <p>siswa srt angkatan 1</p>
+            </div>
+          
+            <div class="foto-item">
+                <img src="vvvvv.jpg" alt="Potret Pria di Luar Ruangan">
+                <p>siswa sr angkatan 1</p>
+            </div>
+
+            <div class="foto-item">
+                <img src="pppp.jpg" alt="Potret Pria di Luar Ruangan">
+                <p>siswa sr angkatan 1</p>
+            </div>
+            
+            <div class="foto-item">
+                <img src="llll.jpg" alt="Potret Pria di Luar Ruangan">
+                <p>siswa sr angkatan 1</p>
+            </div>
+            <div class="foto-item">
+                <img src="zzzzz.jpg" alt="Potret Wanita dengan Pencahayaan Drama">
+                <p>siswa sr angkatan 1</p>
+            </div>
+
+        </div>
+    </div>
+
+    </body>
+</html>
